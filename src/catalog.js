@@ -139,7 +139,7 @@ function createBookCard(book) {
     buy.setAttribute("aria-pressed", String(selected));
   }
   buy.addEventListener("click", () => {
-    toggleBook(book.id);
+    toggleBook(book);
     updateBuy();
     updateCartCount();
   });
