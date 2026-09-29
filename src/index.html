@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Discover your next great read at Bookshop."
+    />
+    <title>Bookshop — Find your next story</title>
+    <link rel="preconnect" href="https://books.google.com" />
+    <link rel="preconnect" href="https://books.googleusercontent.com" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#top" aria-label="Bookshop home"
+          >Book<span>shop</span><span class="brand-dot">.</span></a
+        >
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#books">Books</a>
+          <a href="#featured">Featured</a>
+          <a href="#books">Bestsellers</a>
+          <a href="#about">About us</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-button"
+            type="button"
+            aria-label="Account"
+            title="Account"
+            disabled
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.3" />
+              <path d="M5 20c0-3.7 2.8-6 7-6s7 2.3 7 6" />
+            </svg>
+          </button>
+          <button
+            class="icon-button"
+            type="button"
+            aria-label="Search"
+            title="Search"
+            disabled
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.7" cy="10.7" r="6.5" />
+              <path d="m16 16 5 5" />
+            </svg>
+          </button>
+          <button
+            class="icon-button cart-button"
+            type="button"
+            aria-label="Cart"
+            title="Cart"
+            disabled
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 11h11.4l2.3-8H6" />
+              <circle cx="9" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" /></svg
+            ><span class="cart-count" id="cart-count" hidden>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container" id="featured" aria-label="Featured books">
+        <div class="slider" id="slider">
+          <div class="slides">
+            <article class="slide slide-one is-active" aria-hidden="false">
+              <div class="slide-copy">
+                <span class="eyebrow">Black Friday sale</span>
+                <h1>Up to <em>60%</em><br />off books.</h1>
+                <p>More stories to love, for a whole lot less.</p>
+                <a href="#books" class="hero-link"
+                  >Shop the collection <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="book-art art-one" aria-hidden="true">
+                <div class="book-cover">
+                  <span class="cover-small">THE ART OF</span
+                  ><strong>GETTING<br />LOST</strong
+                  ><span class="cover-line"></span
+                  ><span class="cover-author">ELLIOT REED</span>
+                </div>
+              </div>
+            </article>
+            <article class="slide slide-two" aria-hidden="true">
+              <div class="slide-copy">
+                <span class="eyebrow">For entrepreneurs</span>
+                <h2>Top 10 books<br /><em>to grow.</em></h2>
+                <p>Big ideas for the journey ahead.</p>
+                <a href="#books" class="hero-link"
+                  >Explore books <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="book-art art-two" aria-hidden="true">
+                <div class="book-cover">
+                  <span class="cover-small">A FIELD GUIDE TO</span
+                  ><strong>BRIGHTER<br />DAYS</strong
+                  ><span class="cover-line"></span
+                  ><span class="cover-author">MAYA PARK</span>
+                </div>
+              </div>
+            </article>
+            <article class="slide slide-three" aria-hidden="true">
+              <div class="slide-copy">
+                <span class="eyebrow">Check out</span>
+                <h2>Our cozy<br /><em>book selection.</em></h2>
+                <p>Find a story that feels like home.</p>
+                <a href="#books" class="hero-link"
+                  >Explore books <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="book-art art-three" aria-hidden="true">
+                <div class="book-cover">
+                  <span class="cover-small">THE WORLD IS YOURS</span
+                  ><strong>WILD<br />PLACES</strong
+                  ><span class="cover-line"></span
+                  ><span class="cover-author">JOANNA MILES</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slider-dots" role="group" aria-label="Choose slide">
+            <button
+              type="button"
+              class="slider-dot is-active"
+              aria-label="Show slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              class="slider-dot"
+              aria-label="Show slide 2"
+            ></button>
+            <button
+              type="button"
+              class="slider-dot"
+              aria-label="Show slide 3"
+            ></button>
+          </div>
+        </div>
+        <aside class="hero-promos" aria-label="More to explore">
+          <a href="#books" class="promo promo-purple"
+            ><span>Change old book<br />on new</span
+            ><strong>Explore now <span aria-hidden="true">↗</span></strong></a
+          >
+          <a href="#books" class="promo promo-pink"
+            ><span>Top 100<br />books 2026</span
+            ><strong>Explore now <span aria-hidden="true">↗</span></strong></a
+          >
+        </aside>
+      </section>
+
+      <section
+        class="catalog container"
+        id="books"
+        aria-labelledby="catalog-title"
+      >
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Curated for you</span>
+            <h2 id="catalog-title">Discover your next read</h2>
+          </div>
+          <p>Great books are only a page away.</p>
+        </div>
+        <div class="catalog-layout">
+          <aside class="categories" aria-label="Book categories">
+            <h3>Categories</h3>
+            <div id="category-list" class="category-list"></div>
+          </aside>
+          <div class="catalog-main">
+            <div
+              id="books-status"
+              class="books-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+            <div id="book-grid" class="book-grid"></div>
+            <button id="load-more" class="load-more" type="button" hidden>
+              Load more <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="about">
+      <div class="container footer-inner">
+        <a class="brand" href="#top"
+          >Book<span>shop</span><span class="brand-dot">.</span></a
+        >
+        <p>For the love of books and everything between their pages.</p>
+        <span>© 2026 Bookshop</span>
+      </div>
+    </footer>
+  </body>
+</html>
